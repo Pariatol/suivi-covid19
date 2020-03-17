@@ -1,0 +1,89 @@
+html{
+    font-size:10px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background-color:#1f1e1e;
+}
+
+h1{
+    font-size:4.5rem;
+    color:#f7f7f7;
+    text-align:center;
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countryForm{
+    text-align:center;
+    font-size:2rem;
+    padding-bottom:5rem;
+    border-bottom:4px solid lightgreen;
+}
+
+.countryForm p{
+    color:lightgray;
+    margin-right:2rem;
+}
+
+.countryForm select{
+    height:3rem;
+    font-size:1.7rem;
+    border-radius:2rem;
+    font-weight:600;
+    background-color:lightgray;
+}
+
+.covidByCountry{
+    display:none;
+    margin-top:5rem;
+    color:lightgray;
+    font-size:2rem;
+    width:60%;
+}
+
+.countryName{
+    color:lightgreen;
+}
+
+.confirmedCasesSpan, .totalDeathsSpan, .totalRecoveredSpan{
+    font-weight:700;
+    color:lightgreen;
+}
+
+.source{
+    margin-top:3rem;
+    font-size:1.4rem;
+    color:lightgray;
+}
+
+.source a{
+    color:rgb(179, 169, 169);
+}
+
+.source a:hover{
+    color:lightgreen;
+}
+
+/* Media queries (vite fait, hein) */
+@media(max-width:420px){
+    h1{
+        font-size:3rem;
+    }
+
+    .covidByCountry{
+        width:90%;
+    }
+
+    label{
+        margin-bottom:3rem;
+    }
+}

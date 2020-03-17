@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi de la situation du Covid-19 dans le monde</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Suivi de la situation du Covid-19 par pays</h1>
+    <div class="main">
+    <form class="countryForm">
+        <p>Sélectionner un pays</p>
+        <select name="country-select" id="country-select">       
+        </select>
+    </form>
+
+    <div class="covidByCountry">
+        <h2 class="countryName"></h2>
+        <h3 class="date"></h3>
+        <div class="confirmedCases">Nombre de cas confirmés : <span class="confirmedCasesSpan"></span></div>
+        <div class="totalDeaths">Nombre de morts : <span class="totalDeathsSpan"></span></div>
+        <div class="totalRecovered">Nombre de guérisons : <span class="totalRecoveredSpan"></span></div>
+        <div class="source">
+            ( Source : <a href='https://github.com/CSSEGISandData/COVID-19'>https://github.com/CSSEGISandData/COVID-19</a> via <a href='http://covid19api.com'>http://covid19api.com</a> )
+        </div>
+
+
+    </div>
+
+    </div>  
+    
+</body>
+</html>
